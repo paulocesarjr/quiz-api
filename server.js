@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 5000;
 server.use(bodyParser.json());
 
 server.get('/', (req, res) => {
-    res.json({ status: 'OK', message: 'Quiz API está online.' })
+    res.json({ status: 'OK', message: 'Quiz API está online com CI/CD.' })
 })
 
 // importação de rotas aqui...
