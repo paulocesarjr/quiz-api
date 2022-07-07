@@ -1,5 +1,5 @@
 const pg = require('pg');
-const client = new pg.Client('postgres://lvaocfgg:T9pCFM115QWxIIp6ox_Zmoe0mpJ-juwe@tuffi.db.elephantsql.com/lvaocfgg');
+const client = new pg.Client('postgres://tvwetfwc:qlxmiAGyxzlgfl3lt3Lky9DcqwrAfS15@kesavan.db.elephantsql.com/tvwetfwc');
 
 client.connect((erro) => {
     if (erro) {
