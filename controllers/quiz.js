@@ -15,7 +15,7 @@ const inserirPontuacao = (req, res) => {
     const sql = 'INSERT INTO ranking(nickname, pontuacao) VALUES ($1, $2);';
     const values = [req.body.nickname, req.body.pontuacao];
 
-    if (req.body.nickname == "") {
+    if (!req.body.nickname) {
         res.json({ message: 'Favor inserir um nickname válido!' });
     }
     if (Number.isInteger(req.body.pontuacao)) {

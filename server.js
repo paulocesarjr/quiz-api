@@ -1,10 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors')
 
 const server = express();
 const PORT = process.env.PORT || 5000;
 
 server.use(bodyParser.json());
+server.use(cors());
 
 const quizRoutes = require('./routes/quiz');
 const authRoute = require('./routes/authenticate');
